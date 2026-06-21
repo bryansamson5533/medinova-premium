@@ -358,6 +358,8 @@ section{position:relative}
 @media (prefers-reduced-motion: reduce){
   *{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
   .js section:not(.hero):not(.logos),.reveal{opacity:1!important;transform:none!important;filter:none!important}
+  /* Exception : la barre de confiance continue de défiler (mouvement lent, non gênant) */
+  .logos__track{animation:scrollX 34s linear infinite!important}
 }
 
 /* ============ FORMULAIRE : LABELS & CONSENTEMENT ============ */
